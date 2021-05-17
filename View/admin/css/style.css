@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+body{
+  font-family: 'Barlow', sans-serif;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.border-left{
+  border-left: 2px solid var(--primary) !important;
+}
+
+img{
+  width: 100%;
+}
+.form-group {
+    margin-bottom: .5rem;
+}
+.modal-footer{
+  padding: none;
+}
+.sidebar{
+  top: 0;
+  left : 0;
+  z-index : 100;
+}
+tr input,tr select{
+  border: none;
+  display: none;}
+tr.show{
+  background: #bdc3c7;
+}
+tr.show input,tr.show select{
+  width: 100%;
+  display: block;
+  background: #bdc3c7;
+}
+.show span{display: none;}
+.overlay{
+  background-color: rgb(0 0 0 / 45%);
+  z-index: 99;
+}
+table i{
+  font-size: 18px;
+}
+.modal-header{
+  padding: .5rem 1rem;
+}
+.post_form .modal-dialog {
+    max-width: 70%;
+}
+.no_show{display: none;}
+i.bi-trash{
+  color: #e74c3c;
+}
+i.bi-pencil-square{
+  color: #f39c12;
+}
+i.bi-patch-plus{font-size: 25px;padding-right: 15px;color: black}
+.content__main{
+  padding-bottom: 15px;
+}
+.content__main input{
+  border-radius: 0.3em;
+  border:1px solid #95a5a6;
+  display: block;width: 100%;
+  padding: 3px 10px;
+}
+
+button.close span{display: block;}
+.content__main input:focus-visible{
+  border:1px solid #7f8c8d;
+}
+.trash{width: 7%}
+.err p {
+  font-size: 2em;
+  text-align: center;
+  font-weight: 100;
+}
+tr button{
+  color: #3498db;
+  border: none;
+  background: none;
+}
+tr button:focus {
+    outline: none;
+}
+.err h2 {
+  text-align: center;
+  font-size: 10em;
+  font-weight: 100;
+}
+/* sidebar for small screens */
+@media screen and (max-width: 767px){
+  
+  .sidebar{
+    max-width: 18rem;
+    transform : translateX(-100%);
+    transition : transform 0.4s ease-out;
+  }
+  
+  .sidebar.active{
+    transform : translateX(0);
+  }
+  
+}
